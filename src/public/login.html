@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link href="./css/main.css" rel="stylesheet"/>
+</head>
+<body>
+{{> header}}
+<main>
+    <div class="main-content">
+        <div class="container">
+<div>
+    {{#if errors}}
+    <div class="errors">
+        <div>
+            {{#each errors}}
+                <p>{{this}}</p>
+            {{/each}}
+        </div>
+    </div>
+    {{/if}}
+</div>
+<form action="/loginValidateForm" name="hapie-form" method="post">
+<div>
+    <h2>Hapie Login form</h2>
+    <fieldset>
+        <legend>Login</legend>
+        <div>
+            <label>UserName</label>
+            <input type="text" name="name" maxlength="5"/>
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" name="password" />
+        </div>
+        <div>
+            <input type="submit" value="Login"  />
+        </div>
+    </fieldset>
+</div>
+</form>
+        </div>
+        {{> footer}}
+    </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link href="./css/main.css" rel="stylesheet"/>
+</head>
+<body>
+    {{> header}}
+    <main>
+        <div class="main-content">
+        <div class="container">
+            <h1>Hello, {{username}}</h1>
+        {{#if username}}
+            <a href="/">Logout</a>
+        {{else}}
+            <a href="/login">Login here</a>
+        {{/if}}
+            {{#if secureMessages}}
+            <div class="notes">{{secureMessages}}</div>
+            {{/if}}
+            <div class="content-sub">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed tristique mi, non suscipit orci. Phasellus fermentum metus diam, sit amet egestas nisl dapibus in. Curabitur non nisi at felis dignissim aliquam ut ut leo. Etiam in tellus id ex convallis cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vitae ipsum non quam convallis malesuada id non metus. Duis fringilla sollicitudin felis, et tempus augue lobortis in. In quis metus in tellus condimentum iaculis. Vivamus aliquam non dolor sit amet hendrerit. Suspendisse ornare lectus et vehicula rutrum. Cras non felis vitae leo suscipit feugiat. Nam condimentum sapien a lectus tristique, sed imperdiet massa luctus. Donec lobortis, ligula sit amet mattis faucibus, ante lorem hendrerit urna, quis feugiat sapien lorem lobortis magna. Vestibulum commodo condimentum gravida. Aenean sollicitudin erat eget lacinia commodo. Aliquam bibendum, justo ac tristique ornare, eros dui sagittis mi, ac aliquet urna lacus nec sapien.
+            </div>
+        </div>
+            {{> footer}}
+        </div>
+    </main>
+
+</body>
+</html>

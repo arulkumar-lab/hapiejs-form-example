@@ -1,0 +1,34 @@
+{
+  "name": "hapie-login-form",
+  "version": "1.0.0",
+  "description": "Hapie JS example authenticate module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arulkumar-lab/hapiejs-form-example.git"
+  },
+  "keywords": [
+    "Hapie",
+    "JS",
+    "nodeJS",
+    "express",
+    "joi",
+    "vision",
+    "boom",
+    "inert"
+  ],
+  "author": "Arul",
+  "license": "MIT",
+  "devDependencies": {
+    "@hapi/boom": "^9.1.0",
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/inert": "^6.0.1",
+    "@hapi/joi": "^17.1.1",
+    "@hapi/vision": "^6.0.0",
+    "handlebars": "^4.7.6"
+  }
+}
